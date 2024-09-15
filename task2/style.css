@@ -1,0 +1,15 @@
+body{
+color:white;
+background-color:blue;
+}
+
+
+h1{
+border-style:solid;
+border-color:black;
+border-width:5px;
+}
+
+li{
+list-style-type: upper-alpha;
+}

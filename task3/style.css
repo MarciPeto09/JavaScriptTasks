@@ -1,0 +1,49 @@
+div {
+    background-color: #cfd1d4;
+    border-radius: 5px;
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+}
+
+label, input, select {
+    padding: 15px;
+    width: 100%;
+}
+
+input {
+    border-style: solid;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    border-color: #28d445;
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+#btn {
+    color: white;
+    border-style: none;
+    background-color: #28d445;
+    width: 100%;
+}
+
+#btn:hover {
+    background-color: #1da937;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+option {
+    height: 50px;
+}
