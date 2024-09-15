@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage elements</title>
+</head>
+<body>
+<h1 id="header">Dynamic header</h1>
+<div id="controls">
+    <button id="show">Change to a sample text</button><br/>
+    <button id="show-input">Change to a text from an element</button>
+    <input type="text" id="id-input" placeholder="Enter element id here"/>
+</div>
+<div id="test">
+    <p id="example">Sample text to be loaded</p>
+    <p id="example2">Lorem ipsum bla bla bla</p>
+    <p id="example3">Tests teach!</p>
+    <p id="example4"></p>
+    <p id="example5" style="display: none">Hidden text which can be also displayed!</p>
+</div>
+
+<script>
+    // Attach the show function to the 'show' button so that the header text changes when pressed
+    function newText() {
+        document.getElementById("header").innerHTML = "Hello, this is your new text!";
+    }
+
+    function show() {
+        document.getElementById("show").addEventListener('click', newText);
+    }
+    show();
+</script>
+
+<script>
+    // Modify the show1 function so that it takes a parameter with the ID name and displays
+    // the text of the element with that ID in the header
+
+    function show1(idE) {
+        const element = document.getElementById(idE);
+
+        if (element) {
+            document.getElementById("header").innerHTML = element.textContent;
+        } else {
+            document.getElementById("header").innerHTML = "Element not found!";
+        }
+    }
+
+    document.getElementById("show-input").addEventListener('click', function() {
+        const idInput = document.getElementById("id-input").value;
+        //show1(idInput);
+    });
+</script>
+
+</body>
+</html>
