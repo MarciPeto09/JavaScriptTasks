@@ -1,0 +1,45 @@
+body{
+font-family: 'Arial', sans-serif;
+}
+
+h1{
+width:100%;
+height:100px;
+text-align:center;
+margin:0;
+padding:0;
+color:white;
+background-image: url('fl.jfif');
+}
+
+
+li{
+padding:5px 5px;
+}
+
+ol, label{
+font-size:15px;
+color:blue;
+}
+
+input{
+border-color:blue;
+border-radius:5px;
+}
+
+ol{
+text-transform:uppercase;
+font-style: italic;
+}
+
+button{
+width:100px;
+height:20px;
+margin-left:10px;
+font-size:15px;
+font-weight:bold;
+color:white;
+background-image: url('fl.jfif');
+background-size: cover;
+border-radius:5px;
+}

@@ -1,0 +1,47 @@
+#flex{
+      max-width: 250px;
+      margin: auto;
+      border: 5px solid #ccc;border-radius:5px;
+      padding: 10px;
+}
+
+button{
+width:60px;
+height:40px;
+margin:5px;
+font-size:20px;
+text-align:center;
+border:none;
+border-radius:5px;
+}
+
+.action button{
+background-color:orange;
+color:white;
+}
+
+.number button{
+background-color:black;
+color:white;
+}
+
+.action button:hover{
+background-color: #B06500;
+color:white;
+cursor:pointer;
+}
+
+.number button:hover{
+background-color:#36454F;
+color:white;
+}
+
+#result{
+width:100%;
+height:30px;
+font-size:30px;
+border-radius:5px;
+background-color:black;
+color:white;
+text-align:right;
+}

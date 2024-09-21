@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Thinks to do</h1>
+
+<p>
+    <label for="input">New Task:</label>
+    <input type="text" id="input" name ="input">
+    <button type="submit" id="button">Add Task</button>
+</p>
+
+<ol id="lista">
+</ol>
+
+<script>
+    //Add New Task
+  const element = document.getElementById("button");
+
+element.addEventListener('click', function buttonClick() {
+    const x = document.getElementById("input").value;
+    const newli = document.createElement('li');
+    const newBtn = document.createElement('button');
+
+    newBtn.textContent = "Delete";
+    newli.textContent = x;
+    newli.appendChild(newBtn);
+
+    if (x !== "") {
+        document.getElementById("lista").appendChild(newli);
+        document.getElementById("input").value = '';
+
+
+        newBtn.addEventListener('click', function() {
+            newli.remove();
+        });
+    }
+});
+
+
+    //Mark Task as Completed
+   const lista = document.getElementById("lista");
+
+    lista.addEventListener('click', function(event) {
+        if (event.target.tagName === 'LI') {
+            event.target.style.textDecoration = event.target.style.textDecoration === 'line-through' ? 'none' : 'line-through';
+        }
+    });
+
+
+    //Delete Task
+
+</script>
+
+</body>
+</html>
